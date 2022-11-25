@@ -1,0 +1,77 @@
+[p2b8]
+[p2b8]
+[b32]
+[p2b8]
+[p2b8]
+
+# -------------------------------------------------
+# Config
+# -------------------------------------------------
+
+[droid]
+    ledbrightness = 0.5
+    maxslope1 = 0.25
+    maxslope2 = 0.25
+    maxslope3 = 0.25
+    maxslope4 = 0.25
+    maxslope5 = 0.25
+    maxslope6 = 0.25
+    maxslope7 = 0.25
+    maxslope8 = 0.25
+    lpfilter1 = 0.25
+    lpfilter2 = 0.25
+    lpfilter3 = 0.25
+    lpfilter4 = 0.25
+    lpfilter5 = 0.25
+    lpfilter6 = 0.25
+    lpfilter7 = 0.25
+    lpfilter8 = 0.25
+
+# -------------------------------------------------
+# Clock
+# -------------------------------------------------
+
+[lfo]
+    hz = __BPM * 4
+    level = 1
+    bipolar = 0
+    square = __CLOCK
+#   sawtooth =
+#   triangle =
+#   ramp =
+#   sine =
+
+[midiout]
+#   pitch1 = 0
+    usb = 0
+    clock = _MIDICLOCK
+    start =
+    stop =
+    velocity1 = 1
+    ccnumber1 = 0
+    ccnumber2 = 0
+
+[math]
+    product = _MIDICLOCK
+    input1 = __CLOCK
+    input2 = 24
+
+[button]
+    button =
+    onvalue = 1
+    offvalue = 0
+    led =
+    output =
+
+[math]
+    input1 = P1.1
+    input2 = 4
+    product = __BPM
+
+[clocktool]
+    clock = __CLOCK
+    reset = B1.1
+    divide = 1
+    multiply = 1
+    delay = 0
+    output = G9
